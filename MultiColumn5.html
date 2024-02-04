@@ -1,0 +1,316 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+	echo "# ashortridge.github.io" >> README.md
+	git init
+	git add README.md
+	git commit -m "first commit"
+	git branch -M main
+	git remote add origin https://github.com/ashortridge/ashortridge.github.io.git
+	git push -u origin main
+
+	<meta charset="utf-8">
+	
+	<title>My Final Webpage</title>
+	
+		<style type="text/css">
+			
+			/* http://meyerweb.com/eric/tools/css/reset/ 
+	   v2.0 | 20110126
+	   License: none (public domain)
+	*/
+
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+		
+		/*
+			font-family: 'Cardo', serif;
+			font-family: 'Josefin Sans', sans-serif;
+			font-family: 'Josefin Slab', serif;
+			*/
+
+		body {
+			line-height: 1;
+			font-family: 'Cardo', serif;
+		}
+		
+		article>p{
+			line-height: 130%;
+		}
+		
+		h1,h2, h3, h4, h5, h6{
+			font-family: 'Josefin Sans', sans-serif;
+			color: #4A3000;
+			letter-spacing: .025em;
+		}
+		
+		h1{
+			font-size: 2em;
+			font-weight: bold;
+		}
+		
+		h2{
+			font-size: 1.7em;
+			font-weight: bold;
+		}
+		
+		ol, ul {
+			list-style: none;
+		}
+		blockquote, q {
+			quotes: none;
+		}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: '';
+			content: none;
+		}
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+		
+			#wrapper{
+				width: 80.56640625%;
+				margin: 0 auto;
+				background-color: #CBB487
+			}
+			
+			nav{
+				margin: 0 auto;
+				background-color: #9C9B39;
+				padding: 1% 0;
+			}
+			
+			nav ul{
+				width: 85.57575757575758%;
+				margin: 0 auto;
+			}
+			
+			nav ul li{
+				display: inline;
+				margin-right: 2%;
+			}	
+			
+			body{
+				background-color: #0B0033;
+			}
+			header{
+				background-color: white;
+				padding: 3%;
+			}
+			
+			#feature{
+				width: 81.32575757575758%;
+				margin: 3% auto 4% auto;
+				background-color: white;
+				overflow: hidden;
+				padding: 1.5% 2.25% 3.5% 2.25%;
+			}
+			
+			.feature-img{
+				float: left;
+				width: 40%;
+			}
+			.feature-text{
+				float: left;
+				width: 58%;
+				margin-left: 2%;
+				font-family: 'Josefin Slab', serif;
+				font-size: 1.2em;
+				font-weight: bold;
+				line-height: 115%;
+				letter-spacing: .025em;
+			}
+			
+			#main-content{
+				width: 59.39393939393939%;
+				float: left;
+				margin: 2%;
+			}
+			
+			.main-figure{
+				width: 32.50478011472275%;
+				margin-right: 9.56022944540669%;
+				float: right;
+			}
+			
+			#sidebar{
+				width: 32.60606060606061%;
+				float: left;
+				margin: 2%;
+			}	
+			
+			.side-figure{
+				width: 88.0794701986755%;
+				margin: 0 auto;
+				padding: bottom: 2%;
+			}
+			
+			figure img{
+				max-width: 100%;
+			}
+			
+			figure{
+				background-color: #9C9B39;
+			}
+			footer{
+				clear: left;
+				padding: 2%;
+			}
+			
+			footer p{
+				margin: 0;
+			}
+			
+			/*type styles*/
+			#feature h2{
+				margin-bottom: 2%;
+			}
+			
+			p{
+				margin: 2.5% 0;
+			}
+			
+			figcaption{
+				font-family: 'Josefin Slab', serif;
+				margin: 3%;
+			}
+			
+			#sidebar figcaption{
+				margin-bottom: 6%;
+			}
+			
+			.nav-item{
+				display: inline-block;
+				margin-left: 2%;
+				background-color: white;
+			}
+			
+			li.nav-item a:hover{
+				color: white;
+				background-color: #0B0033;
+			}
+			
+			li.nav-item a:link{
+				color: red;
+			}
+			
+		</style>
+		
+		
+		<!--[if lt IE 9]>
+		<script src="
+		https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+	
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Traveling soccer<h1>
+		</header>
+		
+		<nav>
+			<ul>
+				<li class="nav-item"><a href="FinalMultiColumn.html">page 1</a></li>
+				<li class="nav-item"><a href="MultiColumn2.html">page 2</a></li>
+				<li class="nav-item"><a href="MultiColumn3.html">page 3</a></li>
+				<li class="nav-item"><a href="MultiColumn4.html">page 4</a></li>
+			</ul>
+		</nav>
+		
+		<div id="feature">
+			<h2>Hair</h2>
+			
+			<img src="
+			https://merriam-webster.com/assets/ld/images/legacy_print_images/hair_rev.gif" class="feature-img"/> 
+			
+			<p class="feature-text">Hair is a protein filament that grows from follicles 
+			found in the dermis. Hair is one of the defining characteristics 
+			of mammals. The human body, apart from areas of glabrous skin, 
+			is covered in follicles which produce thick terminal and fine 
+			vellus hair.
+				</p>
+		</div>
+		
+		<div id="main-content">
+			<article>
+				<h2>Hairstyles</h2>
+				<figure class="main-figure">
+					<img src="
+					https://i.pinimg.com/736x/f2/7c/c8/f27cc83fabc001ec743fefa73b02a383--soccer-girl-hairstyles-athletic-hairstyles.jpg" />
+					<figcaption>
+						<p>Hair</p>
+					</figcaption>
+				</figure>
+				<p>
+				Hair is becoming a bigger thing in girls soccer. There is starting to become
+				sterotypes to girls hair styles. One of them is buble braids. If a girl is wearing
+				bubble braids with prewrap it is supposed to mean she is amazing at soccer. If a girl has her
+				hair in a braid with pink prewrap, it is the same as buble braids, she is supposed
+				to be amazing at soccer.
+				</p>
+				<p>
+				Another sterotype is if a girl plays with her hair down whether it is short or long.
+				If a girl plays with her hair down, she is supposed to suck at soccer. The same goes
+				for a girl who had really short hair that can barley make it into a poney.
+				</p>
+				<p>
+				If a girl has two braids in her hair whether they are french or dutch braids. If a girl
+				is playing soccer with her hair like that and has prewrap in her hair, she is said to be 
+				really physical.
+				</p>
+			</article>
+		</div>
+		<div id="sidebar">
+			<article>
+				<h2>Hairstyles</h2>
+				<figure class="side-figure">
+					<img src="
+					https://mediad.publicbroadcasting.net/p/shared/npr/styles/x_large/nprshared/202011/934120423.jpg" />
+					<figcaption>
+						<p>Hair</p>
+					</figcaption>
+				</figure>
+				<p>
+				Some of my favorite hairstyles are the girls who have really short hair,
+				a braid into a poney, two braids all the way down with prewrap, and 
+				any bun.
+				</p>
+			</article>
+		</div>
+	<div>
+		<footer>
+			<p><small>Aleah Shortridge, Febuary 2024</small></p>
+		</footer>
+	</div><!--Close wrapper-->
+
+</body>
+</html>
